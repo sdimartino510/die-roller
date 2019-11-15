@@ -1,0 +1,23 @@
+{
+  "name": "die-roller",
+  "version": "1.0.0",
+  "description": "Die rolling utility for role-playing games",
+  "main": "dieRoller.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdimartino510/die-roller.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdimartino510/die-roller/issues"
+  },
+  "homepage": "https://github.com/sdimartino510/die-roller#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
