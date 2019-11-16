@@ -24,30 +24,37 @@ inquirer.prompt([
     const dieNumber = answers.inputDieNumber;
     const modifier = answers.inputModifier;
 
+    function dieRoll(dieType, dieNumber) {
+        for (let i = 0; i <= dieNumber; i++) {
+            initialResult = Math.floor((Math.random() * dieType) + 1);
+        }
+        return initialResult;
+    }
+
     switch (dieType) {
         case "D2":
-            result = Math.floor((Math.random() * 2) + 1);
+            result = dieRoll(2, dieNumber);
             break;
         case "D4":
-            result = Math.floor((Math.random() * 4) + 1);
+            result = dieRoll(4, dieNumber);
             break;
         case "D6":
-            result = Math.floor((Math.random() * 6) + 1);
+            result = dieRoll(6, dieNumber);
             break;
         case "D8":
-            result = Math.floor((Math.random() * 8) + 1);
+            result = dieRoll(8, dieNumber);
             break;
         case "D10":
-            result = Math.floor((Math.random() * 10) + 1);
+            result = dieRoll(10, dieNumber);
             break;
         case "D12":
-            result = Math.floor((Math.random() * 12) + 1);
+            result = dieRoll(12, dieNumber);
             break;
         case "D20":
-            result = Math.floor((Math.random() * 20) + 1);
+            result = dieRoll(20, dieNumber);
             break;
         case "D100":
-            result = Math.floor((Math.random() * 100) + 1);
+            result = dieRoll(100, dieNumber);
     }
 
     const finalResult = result + modifier;
