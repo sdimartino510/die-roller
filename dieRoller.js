@@ -1,5 +1,10 @@
 var inquirer = require("inquirer");
 
+console.log("");
+console.log("Die Roller");
+console.log("----------");
+console.log("");
+
 inquirer.prompt([
     {
         type: "list",
@@ -62,4 +67,5 @@ inquirer.prompt([
     const finalResult = result + modifier;
 
     console.log(`You rolled a ${finalResult}!`);
+    console.log("");
 });
