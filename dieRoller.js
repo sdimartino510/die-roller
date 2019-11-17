@@ -24,11 +24,13 @@ inquirer.prompt([
     const dieNumber = answers.inputDieNumber;
     const modifier = answers.inputModifier;
 
-    function dieRoll(dieType, dieNumber) {
-        for (let i = 0; i <= dieNumber; i++) {
-            initialResult = Math.floor((Math.random() * dieType) + 1);
-        }
-        return initialResult;
+    function dieRoll(dieFaces, dieNumber) {
+        let sum = 0
+        for (let i = 0; i < dieNumber; i++) {
+            sum += Math.floor((Math.random() * dieFaces) + 1);
+        }
+        
+        return sum;
     }
 
     switch (dieType) {
